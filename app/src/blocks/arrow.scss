@@ -1,0 +1,39 @@
+$name: arrow;
+
+.#{$name} {
+	background-color: $color-second;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 40%;
+		height: 40%;
+		background: url('../img/icons/arrow.svg') no-repeat center / contain;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $color-second-hover;
+	}
+
+	&:active {
+		background-color: $color-second-active;
+	}
+
+	&_left {
+
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
+}
