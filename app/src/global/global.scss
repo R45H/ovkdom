@@ -24,7 +24,7 @@ body {
 	font-size: 15px;
 	font-family: $font-main;
 	color: $color-text;
-	line-height: 1.5;
+	line-height: 1.4;
 
 	&.noscroll {
 		overflow: hidden;
@@ -99,6 +99,10 @@ svg {
 
 .text-right {
 	text-align: right;
+}
+
+.text-white {
+	color: white;
 }
 
 .mb-0 {

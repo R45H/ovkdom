@@ -3,4 +3,14 @@ $name: main;
 .#{$name} {
 	flex: 1 0 auto;
 	padding-top: 50px;
+
+	&__separator {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $color-text;
+	}
+
+	&__bg-black {
+		background: black;
+	}
 }
