@@ -24,6 +24,10 @@ $font-main: 'Roboto', sans-serif; // normali | 500i | 700i
 $font-second: 'Pacifico', sans-serif; // normal
 $font-fa: 'FontAwesome', sans-serif;
 
+%transition {
+	transition: .3s ease;
+}
+
 // ----------------------------
 // МИКСИНЫ ДЛЯ ТЕКУЩЕГО ПРОЕКТА
 // ----------------------------

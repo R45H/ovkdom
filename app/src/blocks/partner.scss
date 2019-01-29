@@ -1,0 +1,19 @@
+$name: partner;
+
+.#{$name} {
+	@extend %transition;
+	display: block;
+	width: 100%;
+	opacity: .4;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		padding-bottom: 66%;
+		background: no-repeat center / contain;
+	}
+}

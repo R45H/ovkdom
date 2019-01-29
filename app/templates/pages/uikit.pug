@@ -1,3 +1,5 @@
+include ../mixins/partner
+
 .container
 
 	.row.main__separator
@@ -69,3 +71,13 @@
 
 		.col-1.mb-15
 			.arrow.arrow_left
+	.row.main__separator
+
+		.col-2.mb-15
+			+partner({
+				link: '#',
+				img: 'img/content/partner.png'
+			})
+
+		.col-2.mb-15
+			+partner
