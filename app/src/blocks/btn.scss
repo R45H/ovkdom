@@ -1,0 +1,33 @@
+$name: btn;
+
+.#{$name} {
+	display: inline-block;
+	font-family: $font-main;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+	background-color: $color-second;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	line-height: 1.4;
+	outline: none;
+	padding: 6px 16px;
+	border-radius: 17px;
+	word-break: break-word;
+	user-select: none;
+
+	&:hover,
+	&:focus {
+		background-color: $color-second-hover;
+	}
+
+	&:active {
+		background-color: $color-second-active;
+	}
+
+	&_wide {
+		display: block;
+		width: 100%;
+	}
+}

@@ -1,10 +1,10 @@
 $color-main: #045aa9;
-$color-main-hover: #499ae4;
-$color-main-active: #004482;
+$color-main-hover: lighten($color-main, 10%);
+$color-main-active: darken($color-main, 10%);
 
 $color-second: #f86f16;
-$color-second-hover: #ffa164;
-$color-second-active: #d55400;
+$color-second-hover: lighten($color-second, 10%);
+$color-second-active: darken($color-second, 10%);
 
 $color-text: #353535;
 $color-gray: #eee;
