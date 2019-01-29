@@ -1,0 +1,27 @@
+$name: list;
+
+.#{$name} {
+	font-size: 16px;
+	font-weight: 500;
+	list-style-type: none;
+
+	&__item {
+		padding-left: 4.1rem;
+		position: relative;
+		margin-bottom: 1em;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: .55em;
+			left: 1.1rem;
+			width: 1.9rem;
+			height: 4px;
+			background: $color-second;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
