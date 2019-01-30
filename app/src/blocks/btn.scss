@@ -1,6 +1,7 @@
 $name: btn;
 
 .#{$name} {
+	@extend %transition;
 	display: inline-block;
 	font-family: $font-main;
 	font-size: 15px;

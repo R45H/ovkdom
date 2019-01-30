@@ -1,5 +1,6 @@
 include ../components/toggle
 include ../mixins/partner
+include ../mixins/logo
 
 .container
 
@@ -87,3 +88,11 @@ include ../mixins/partner
 
 		.col-12
 			+toggle
+
+	.row.main__separator
+
+		.col-2
+			+logo
+
+		.col-2.main__bg-black
+			+logo(class='logo_color_white')

@@ -1,6 +1,7 @@
 $name: arrow;
 
 .#{$name} {
+	@extend %transition;
 	background-color: $color-second;
 	border: none;
 	cursor: pointer;

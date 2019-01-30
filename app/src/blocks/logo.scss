@@ -1,0 +1,95 @@
+$name: logo;
+
+.#{$name} {
+
+	&__img {
+
+	}
+
+	&__item {
+		@extend %transition;
+
+		&_color_1 {
+			fill: $color-second;
+		}
+
+		&_color_2 {
+			fill: $color-main;
+		}
+	}
+
+	&:hover,
+	&:focus {
+
+		.#{$name} {
+			// =====
+
+			&__item {
+
+				&_color_1 {
+					fill: $color-second-hover;
+				}
+
+				&_color_2 {
+					fill: $color-main-hover;
+				}
+			}
+		}
+	}
+
+	&:active {
+
+		.#{$name} {
+			// =====
+
+			&__item {
+
+				&_color_1 {
+					fill: $color-second-active;
+				}
+
+				&_color_2 {
+					fill: $color-main-active;
+				}
+			}
+		}
+	}
+
+	&_color_white {
+
+		.#{$name} {
+			// =====
+
+			&__item {
+
+				&_color_1 {
+					fill: white;
+				}
+
+				&_color_2 {
+					fill: white;
+				}
+			}
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			.#{$name} {
+				// =====
+
+				&__item {
+
+					&_color_1 {
+						fill: $color-gray-dark;
+					}
+
+					&_color_2 {
+						fill: $color-gray-dark;
+					}
+				}
+			}
+		}
+	}
+}
