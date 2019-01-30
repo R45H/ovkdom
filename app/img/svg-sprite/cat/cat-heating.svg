@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.71 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-3.25)">
+      <rect class="cls-1" width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <title>Otoplenie</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-2">
+        <g>
+          <path d="M21,46H49V8H21Zm2-36H47V44H23Z" transform="translate(-3.25)"/>
+          <path d="M54,2H52.48a3.8,3.8,0,0,0-3.33-2H20.77A3.82,3.82,0,0,0,17,3.81V50.1a5,5,0,1,0,5.9,5.9h24.2A5,5,0,1,0,53,50.1V12h1a3,3,0,0,0,2.22-5A3,3,0,0,0,54,2Zm1,3a1,1,0,0,1-1,1H53V4h1A1,1,0,0,1,55,5ZM18,58a3,3,0,1,1,3-3A3,3,0,0,1,18,58Zm37-3a3,3,0,1,1-3-3A3,3,0,0,1,55,55Zm-4-4.9a5,5,0,0,0-3.9,3.9H46V50H44v4H42V50H40v4H38V50H36v4H34V50H32v4H30V50H28v4H26V50H24v4h-1.1A5,5,0,0,0,19,50.1V3.81A1.81,1.81,0,0,1,20.77,2H24V6h2V2h2V6h2V2h2V6h2V2h2V6h2V2h2V6h2V2h2V6h2V2h3.19A1.81,1.81,0,0,1,51,3.81ZM54,10H53V8h1a1,1,0,0,1,0,2Z" transform="translate(-3.25)"/>
+          <path d="M42,12H28a3,3,0,0,0,0,6H42a3,3,0,1,0,0-6Zm0,4H28a1,1,0,1,1,0-2H42a1,1,0,1,1,0,2Z" transform="translate(-3.25)"/>
+          <path d="M42,20H28a3,3,0,0,0,0,6H42a3,3,0,1,0,0-6Zm0,4H28a1,1,0,0,1,0-2H42a1,1,0,0,1,0,2Z" transform="translate(-3.25)"/>
+          <path d="M42,28H28a3,3,0,0,0,0,6H42a3,3,0,1,0,0-6Zm0,4H28a1,1,0,0,1,0-2H42a1,1,0,0,1,0,2Z" transform="translate(-3.25)"/>
+          <path d="M42,36H28a3,3,0,1,0,0,6H42a3,3,0,1,0,0-6Zm0,4H28a1,1,0,1,1,0-2H42a1,1,0,0,1,0,2Z" transform="translate(-3.25)"/>
+          <path d="M4.66,19.71,7,17.41l4,4,3.71-3.71-1.41-1.41L11,18.59l-4-4L3.25,18.29Z" transform="translate(-3.25)"/>
+          <path d="M4.66,27.71,7,25.41l4,4,3.71-3.71-1.41-1.41L11,26.59l-4-4L3.25,26.29Z" transform="translate(-3.25)"/>
+          <path d="M11,13.41l3.71-3.71L13.25,8.29,11,10.59l-4-4L3.25,10.29l1.41,1.41L7,9.41Z" transform="translate(-3.25)"/>
+          <path d="M4.66,43.71,7,41.41l4,4,3.71-3.71-1.41-1.41L11,42.59l-4-4L3.25,42.29Z" transform="translate(-3.25)"/>
+          <path d="M4.66,35.71,7,33.41l4,4,3.71-3.71-1.41-1.41L11,34.59l-4-4L3.25,34.29Z" transform="translate(-3.25)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

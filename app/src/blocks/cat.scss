@@ -1,0 +1,62 @@
+$name: cat;
+
+.#{$name} {
+	@extend %transition;
+	background: rgba($color-main, .45);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&:hover {
+		background: rgba($color-text, .45);
+
+		.#{$name} {
+			// =====
+
+			&__title {
+				background: $color-second;
+			}
+
+			&__img-wrap {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__wrap {
+		padding: 10rem 15px 0;
+	}
+
+	&__icon-wrap {
+		width: 25%;
+		margin: 0 auto 20px;
+	}
+
+	&__title-wrap {
+		margin: 0 0 20px -15px;
+	}
+
+	&__title {
+		@extend %transition;
+		display: inline-block;
+		padding: 7px 15px;
+		line-height: 1.2;
+	}
+
+	&__list-wrap {
+		margin-bottom: 20px;
+	}
+
+	&__img-wrap {
+		@extend %transition;
+		margin: auto -50px -50px 50px;
+		opacity: 0;
+	}
+
+	&__img {
+		background: no-repeat center / contain;
+		padding-bottom: 100%;
+		width: 100%;
+	}
+}

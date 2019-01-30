@@ -1,0 +1,52 @@
+{
+	"cat": [
+		{
+			"icon": "cat-home",
+			"title": {
+				"name": "Домокомплекты",
+				"link": "#"
+			},
+			"list": [
+				{"name": "Проекты", "link": "#"},
+				{"name": "Калькулятор", "link": "#"},
+				{"name": "Объекты", "link": "#"}
+			],
+			"img": "img/content/cat/home.png"
+		},
+		{
+			"icon": "cat-heating",
+			"title": {
+				"name": "Отопление",
+				"link": "#"
+			},
+			"list": [
+				{"name": "Электрические котлы", "link": "#"},
+				{"name": "Радиаторы", "link": "#"}
+			],
+			"img": "img/content/cat/heating.png"
+		},
+		{
+			"icon": "cat-water-supply",
+			"title": {
+				"name": "Водоснабжение",
+				"link": "#"
+			},
+			"list": [
+				{"name": "Насосы", "link": "#"}
+			],
+			"img": "img/content/cat/water-supply.png"
+		},
+		{
+			"icon": "cat-sewage",
+			"title": {
+				"name": "Канализация",
+				"link": "#"
+			},
+			"list": [
+				{"name": "Септики", "link": "#"},
+				{"name": "Трубы", "link": "#"}
+			],
+			"img": "img/content/cat/sewage.png"
+		}
+	]
+}

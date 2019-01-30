@@ -4,6 +4,7 @@ include ../mixins/partner
 include ../mixins/logo
 include ../mixins/icon
 include ../mixins/banner
+include ../mixins/cat
 
 .container
 
@@ -198,3 +199,8 @@ include ../mixins/banner
 
 		.col-12.mb-15
 			+webc
+
+	.row.main__separator
+
+		.col-3.mb-15
+			+cat(cat[0])

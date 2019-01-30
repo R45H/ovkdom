@@ -1,0 +1,24 @@
+include icon
+
+mixin cat(data)
+	.cat
+
+		.cat__wrap
+			.cat__icon-wrap
+				+icon({
+					icon: data.icon
+				})(class='icon_color_white')
+
+			.cat__title-wrap
+				.title.title_upper.cat__title
+					a.link.link_line_none.link_color_white(href= data.title.link)= data.title.name
+
+			.cat__list-wrap
+				ul.list
+
+					each val in data.list
+						li.list__item
+							a.link.link_line_none.link_color_white(href= val.link)= val.name
+
+		.cat__img-wrap
+			.cat__img(style='background-image: url(' + data.img + ');')
