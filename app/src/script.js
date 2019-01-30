@@ -5,6 +5,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/toggle/toggle.js'
 	}());
+	(function() {
+		//=require 'blocks/slider/slider.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

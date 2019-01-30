@@ -1,0 +1,46 @@
+$name: slider;
+
+.#{$name} {
+	position: relative;
+	padding: 0 45px;
+
+	@include screen-sm() {
+		padding: 0 10rem;
+	}
+
+	.slick-list {
+		margin: 0 -7px;
+	}
+
+	.slick-slide {
+		outline: none;
+
+		> div {
+			display: flex;
+		}
+	}
+
+	&__arrow {
+		outline: none;
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&_prev {
+			left: 0;
+		}
+
+		&_next {
+			right: 0;
+		}
+	}
+
+	&__body {
+		overflow: hidden;
+	}
+
+	&__item {
+		padding: 0 7px;
+	}
+}

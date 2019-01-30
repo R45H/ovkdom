@@ -157,3 +157,31 @@ include ../mixins/banner
 				link: '#',
 				img: 'img/content/action.jpg'
 			})
+
+	.row.main__separator
+
+		.col-12.mb-15
+			.slider
+				.slider__body
+
+					- for (var i = 0; i < 2; i++) {
+						.slider__item
+							+banner({
+								img: 'img/content/action.jpg'
+							})
+					- }
+
+		.col-12.mb-15
+			.slider(
+				data-sm-cols='2'
+				data-md-cols='3'
+				data-lg-cols='4'
+			)
+				.slider__body
+
+					- for (var i = 0; i < 6; i++) {
+						.slider__item
+							+banner({
+								img: 'img/content/action.jpg'
+							})
+					- }
