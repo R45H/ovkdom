@@ -1,0 +1,19 @@
+$name: text-icon;
+
+.#{$name} {
+	display: block;
+	position: relative;
+	margin-left: 30px;
+	fill: currentColor;
+
+	&__img {
+		width: 2em;
+		height: 1.334em;
+		max-height: none;
+		position: absolute;
+		right: 100%;
+		padding-right: .4em;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
