@@ -1,0 +1,54 @@
+$name: webc;
+
+.#{$name} {
+
+	&__text,
+	&__link {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__text {
+		margin-right: .7em;
+	}
+
+	&__img {
+		display: block;
+		width: 55px;
+		max-height: 25px;
+
+		&:hover,
+		&:focus {
+
+			.#{$name}__item {
+
+				&_color_1 {
+					fill: $color-webcenter-2;
+				}
+
+				&_color_2 {
+					fill: $color-webcenter-1;
+				}
+			}
+		}
+
+		&:active {
+
+			.#{$name}__item {
+
+				&_color_1 {
+					fill: darken($color-webcenter-2, 10%);
+				}
+
+				&_color_2 {
+					fill: darken($color-webcenter-1, 20%);
+				}
+			}
+		}
+	}
+
+	&__item {
+		@extend %transition;
+		fill: currentColor;
+	}
+}
