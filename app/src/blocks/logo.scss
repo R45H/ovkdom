@@ -73,8 +73,7 @@ $name: logo;
 		}
 
 		&:hover,
-		&:focus,
-		&:active {
+		&:focus {
 
 			.#{$name} {
 				// =====
@@ -87,6 +86,24 @@ $name: logo;
 
 					&_color_2 {
 						fill: $color-gray-dark;
+					}
+				}
+			}
+		}
+
+		&:active {
+
+			.#{$name} {
+				// =====
+
+				&__item {
+
+					&_color_1 {
+						fill: $color-gray-dark-active;
+					}
+
+					&_color_2 {
+						fill: $color-gray-dark-active;
 					}
 				}
 			}

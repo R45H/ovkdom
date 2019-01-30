@@ -1,0 +1,22 @@
+$name: link;
+
+.#{$name} {
+	@extend a:not([class]);
+
+	&_line_none {
+		border-bottom: none;
+	}
+
+	&_color_white {
+		color: white;
+
+		&:hover,
+		&:focus {
+			color: $color-gray-dark;
+		}
+
+		&:active {
+			color: $color-gray-dark-active;
+		}
+	}
+}

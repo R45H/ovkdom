@@ -70,8 +70,17 @@ a {
 
 	&:not([class]),
 	&[class=''] {
-		color: $color-text;
+		@extend %transition;
+		color: $color-main;
 		border-bottom: 1px solid currentColor;
+
+		&:hover {
+			color: $color-main-hover;
+		}
+
+		&:active {
+			color: $color-main-active;
+		}
 	}
 }
 
