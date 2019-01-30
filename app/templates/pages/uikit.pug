@@ -2,6 +2,7 @@ include ../components/toggle
 include ../mixins/partner
 include ../mixins/logo
 include ../mixins/icon
+include ../mixins/banner
 
 .container
 
@@ -137,4 +138,22 @@ include ../mixins/icon
 		.col-1
 			+icon({
 				icon: 'basket'
+			})
+
+	.row.main__separator
+
+		.col-6.mb-15
+			+banner({
+				img: 'img/content/action.jpg'
+			})
+
+		.col-6.mb-15
+			+banner({
+				img: 'img/content/action.jpg'
+			})(class='banner_contain')
+
+		.col-6.mb-15
+			+banner({
+				link: '#',
+				img: 'img/content/action.jpg'
 			})
