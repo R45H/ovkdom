@@ -1,0 +1,11 @@
+include ../mixins/svg
+include ../mixins/global
+
+mixin icon(data)
+	+g-tag(data && data.link ? 'a' : '')(
+		class='icon'
+		class= attributes.class
+		href= data && data.link ? data.link : null
+	)
+		.icon__wrap
+			+svg(data.icon, 'icon__img')

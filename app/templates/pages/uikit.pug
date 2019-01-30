@@ -1,6 +1,7 @@
 include ../components/toggle
 include ../mixins/partner
 include ../mixins/logo
+include ../mixins/icon
 
 .container
 
@@ -112,3 +113,28 @@ include ../mixins/logo
 
 		.col-2.main__bg-black
 			+logo(class='logo_color_white')
+
+	.row.main__separator
+
+		.col-1
+			+icon({
+				icon: 'basket',
+				link: '#'
+			})
+
+		.col-1
+			+icon({
+				icon: 'basket',
+				link: '#'
+			})(class='icon_color_main')
+
+		.col-1.main__bg-black
+			+icon({
+				icon: 'basket',
+				link: '#'
+			})(class='icon_color_white')
+
+		.col-1
+			+icon({
+				icon: 'basket'
+			})
