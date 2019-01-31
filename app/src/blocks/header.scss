@@ -5,6 +5,127 @@ $name: header;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
+	height: $height-header-mobile;
+	box-shadow: 0 2px 5px rgba($color-text, .3);
+	background: white;
 	z-index: 50;
+
+	@include screen-sm() {
+		height: $height-header;
+	}
+
+	&__wrap {
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+		@include screen-sm() {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__row {
+		margin: 0 -5px;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include screen-sm() {
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+	}
+
+	&__col {
+		padding: 0 5px;
+
+		@include screen-sm() {
+			padding: 0 15px;
+		}
+
+		&_center {
+			display: none;
+
+			@include screen-md() {
+				display: block;
+				flex: auto;
+				text-align: center;
+			}
+		}
+
+		&_left,
+		&_right {
+			flex: none;
+			display: flex;
+			align-items: center;
+
+			@include screen-lg() {
+				width: 31%;
+			}
+		}
+
+		&_left {
+
+		}
+
+		&_right {
+
+			@include screen-sm() {
+				justify-content: flex-end;
+			}
+		}
+	}
+
+	&__toggle-wrap {
+		margin-right: 5px;
+		margin-left: -10px;
+
+		@include screen-sm() {
+			margin-right: 15px;
+		}
+	}
+
+	&__logo-wrap {
+		width: 50px;
+
+		@include screen-sm() {
+			width: 70px;
+		}
+	}
+
+	&__basket-wrap {
+		display: none;
+
+		@include screen-sm() {
+			display: block;
+			width: 40px;
+			margin-right: 15px;
+		}
+	}
+
+	&__tel-wrap {
+
+		@include screen-sm() {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+
+	&__tel {
+
+		@include screen-sm() {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__btn {
+		display: none;
+
+		@include screen-sm() {
+			display: block;
+		}
+	}
 }

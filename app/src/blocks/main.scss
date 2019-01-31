@@ -2,7 +2,11 @@ $name: main;
 
 .#{$name} {
 	flex: 1 0 auto;
-	padding-top: 50px;
+	padding-top: $height-header-mobile;
+
+	@include screen-sm() {
+		padding-top: $height-header;
+	}
 
 	&__separator {
 		margin-bottom: 30px;

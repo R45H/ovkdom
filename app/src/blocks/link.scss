@@ -19,4 +19,17 @@ $name: link;
 			color: $color-gray-dark-active;
 		}
 	}
+
+	&_color_text {
+		color: $color-text;
+
+		&:hover,
+		&:focus {
+			color: lighten($color-text, 20%);
+		}
+
+		&:active {
+			color: black;
+		}
+	}
 }

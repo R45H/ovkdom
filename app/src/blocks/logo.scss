@@ -1,9 +1,10 @@
 $name: logo;
 
 .#{$name} {
+	display: block;
 
 	&__img {
-
+		display: block;
 	}
 
 	&__item {

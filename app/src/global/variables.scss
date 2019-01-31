@@ -28,6 +28,9 @@ $font-fa: 'FontAwesome', sans-serif;
 
 $duration: .3s;
 
+$height-header-mobile: 60px;
+$height-header: 90px;
+
 %transition {
 	transition: $duration ease;
 }
