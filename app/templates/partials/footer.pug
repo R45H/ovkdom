@@ -1,2 +1,58 @@
+include ../components/webc
+include ../mixins/logo
+include ../mixins/svg
+
 // FOOTER
 footer.footer
+
+	.footer__top
+		.container.footer__wrap
+			.footer__row
+
+				.footer__col
+					.footer__logo-wrap
+						+logo(class='logo_color_white')
+
+				.footer__col
+					.title.title_size_xs.title_upper
+						a.link.link_line_none.link_color_white(href='#') Статьи
+
+				.footer__col
+					.title.title_size_xs.title_upper
+						a.link.link_line_none.link_color_white(href='#') Прочее
+
+				.footer__col
+					.mb-5
+						.text-icon.footer__text-dark
+							| Телефон:
+							+svg('tel', 'text-icon__img')
+					.title.title_size_xxs
+						a.link.link_line_none.link_color_white(href='tel: +78120000000') +7 (812) 000-00-00
+
+				.footer__col
+					.mb-5
+						.text-icon.footer__text-dark
+							| Почта:
+							+svg('message', 'text-icon__img')
+					div
+						a.link.link_line_none.link_color_white(href='mailto:name@mail.ru') name@mail.ru
+
+				.footer__col
+					.mb-5
+						.text-icon.footer__text-dark
+							| Адрес:
+							+svg('marker', 'text-icon__img')
+					div г.Москва, Рублевское ш. д.26 кор.4 офис.5
+
+
+	.footer__bottom.footer__text-darker
+		.container.footer__wrap
+			.footer__row.footer__row_mobile_center
+
+				.footer__col © 2019 ovkdom.ru
+
+				.footer__col
+					a.link.link_line_none.link_color_white.footer__text-darker(href='#') Политика конфиденциальности
+
+				.footer__col
+					+webc

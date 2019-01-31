@@ -2,4 +2,58 @@ $name: footer;
 
 .#{$name} {
 	flex: 0 0 auto;
+	background: $color-main;
+	color: white;
+
+	&__top {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid $color-light;
+	}
+
+	&__bottom {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__wrap {
+
+	}
+
+	&__row {
+		margin: 0 -15px -15px;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		&_mobile_center {
+
+			@include screen-md(max) {
+				justify-content: center;
+				text-align: center;
+			}
+		}
+	}
+
+	&__col {
+		padding: 0 15px 15px;
+	}
+
+	&__logo-wrap {
+		width: 50px;
+
+		@include screen-sm() {
+			width: 70px;
+		}
+	}
+
+	&__text-dark {
+		color: $color-lighter;
+	}
+
+	&__text-darker {
+		color: $color-light;
+	}
 }
