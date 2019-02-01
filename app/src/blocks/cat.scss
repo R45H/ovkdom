@@ -2,14 +2,13 @@ $name: cat;
 
 .#{$name} {
 	@extend %transition;
-	background: rgba($color-main, .45);
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 
 	&:hover {
-		background: rgba($color-text, .45);
+		background: rgba($color-text, .65);
 
 		.#{$name} {
 			// =====
@@ -19,13 +18,20 @@ $name: cat;
 			}
 
 			&__img-wrap {
-				opacity: 1;
+
+				@include screen-lg() {
+					opacity: 1;
+				}
 			}
 		}
 	}
 
 	&__wrap {
-		padding: 10rem 15px 0;
+		padding: 30px 10px 10px;
+
+		@include screen-lg() {
+			padding: 10rem 10px 0;
+		}
 	}
 
 	&__icon-wrap {
@@ -34,14 +40,15 @@ $name: cat;
 	}
 
 	&__title-wrap {
-		margin: 0 0 20px -15px;
+		margin: 0 -10px 20px;
 	}
 
 	&__title {
 		@extend %transition;
 		display: inline-block;
-		padding: 7px 15px;
+		padding: 7px 10px;
 		line-height: 1.2;
+		word-break: break-word;
 	}
 
 	&__list-wrap {
@@ -50,8 +57,13 @@ $name: cat;
 
 	&__img-wrap {
 		@extend %transition;
-		margin: auto -50px -50px 50px;
-		opacity: 0;
+		display: none;
+
+		@include screen-lg() {
+			display: block;
+			margin: auto -50px -50px 50px;
+			opacity: 0;
+		}
 	}
 
 	&__img {

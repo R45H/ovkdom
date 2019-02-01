@@ -17,4 +17,49 @@ $name: main;
 	&__bg-black {
 		background: black;
 	}
+
+	&__no-pad_sm {
+
+		@include screen-sm(max) {
+			padding: 0;
+		}
+	}
+
+	&__cat-row {
+		margin: 0;
+	}
+
+	&__cat-col {
+		padding: 0;
+		border-bottom: 1px solid $color-light;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		@include screen-sm() {
+			border-left: 1px solid $color-light;
+
+			&:nth-child(even) {
+				border-right: 1px solid $color-light;
+			}
+
+			&:nth-last-child(1),
+			&:nth-last-child(2) {
+				border-bottom: none;
+			}
+		}
+
+		@include screen-lg() {
+			border-bottom: none;
+
+			&:nth-child(even) {
+				border-right: none;
+			}
+
+			&:last-child {
+				border-right: 1px solid $color-light;
+			}
+		}
+	}
 }

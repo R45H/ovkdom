@@ -130,6 +130,14 @@ svg {
 	margin-bottom: 30px;
 }
 
+.mb-2rem {
+	margin-bottom: 2rem;
+}
+
+.mb-3rem {
+	margin-bottom: 3rem;
+}
+
 .mb-sm-0 {
 
 	@include screen-sm() {
@@ -169,6 +177,20 @@ svg {
 
 	@include screen-sm() {
 		margin-bottom: 30px;
+	}
+}
+
+.mb-sm-2rem {
+
+	@include screen-sm() {
+		margin-bottom: 2rem;
+	}
+}
+
+.mb-sm-3rem {
+
+	@include screen-sm() {
+		margin-bottom: 3rem;
 	}
 }
 
@@ -214,6 +236,20 @@ svg {
 	}
 }
 
+.mb-md-2rem {
+
+	@include screen-md() {
+		margin-bottom: 2rem;
+	}
+}
+
+.mb-md-3rem {
+
+	@include screen-md() {
+		margin-bottom: 3rem;
+	}
+}
+
 .mb-lg-0 {
 
 	@include screen-lg() {
@@ -256,6 +292,20 @@ svg {
 	}
 }
 
+.mb-lg-2rem {
+
+	@include screen-lg() {
+		margin-bottom: 2rem;
+	}
+}
+
+.mb-lg-3rem {
+
+	@include screen-lg() {
+		margin-bottom: 3rem;
+	}
+}
+
 .mb-xl-0 {
 
 	@include screen-xl() {
@@ -295,5 +345,19 @@ svg {
 
 	@include screen-xl() {
 		margin-bottom: 30px;
+	}
+}
+
+.mb-xl-2rem {
+
+	@include screen-xl() {
+		margin-bottom: 2rem;
+	}
+}
+
+.mb-xl-3rem {
+
+	@include screen-xl() {
+		margin-bottom: 3rem;
 	}
 }

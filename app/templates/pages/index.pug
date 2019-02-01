@@ -1,0 +1,48 @@
+include ../mixins/banner
+include ../mixins/partner
+include ../mixins/cat
+
+.section.section_space_none.section_fill_main(style='background-image: url(img/content/section.jpg);')
+	.container.main__no-pad_sm
+		.row.main__cat-row
+
+			each val in cat
+				.col-sm-6.col-lg-3.main__cat-col
+					+cat(val)
+
+.section
+	.container
+
+		.mb-3rem
+			.title.text-center Акции
+
+		.slider
+			.slider__body
+
+				- for (var i = 0; i < 2; i++) {
+					.slider__item
+						+banner({
+							img: 'img/content/action.jpg'
+						})
+				- }
+
+.section.section_bg_gray
+	.container
+
+		.mb-3rem
+			.title.text-center Наши партнёры
+
+		.slider(
+			data-sm-cols='2'
+			data-md-cols='3'
+			data-lg-cols='4'
+			data-xl-cols='5'
+		)
+			.slider__body
+
+				- for (var i = 0; i < 6; i++) {
+					.slider__item
+						+partner({
+							link: '#'
+						})
+				- }
