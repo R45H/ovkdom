@@ -89,9 +89,11 @@ $name: header;
 
 	&__logo-wrap {
 		width: 50px;
+		max-height: 45px;
 
 		@include screen-sm() {
 			width: 70px;
+			max-height: 60px;
 		}
 	}
 
