@@ -35,6 +35,9 @@ include ../mixins/cat
 		.col-2
 			a.link.link_color_text(href='#') .link.link_color_text
 
+		.col-2
+			a.link.link_upper(href='#') .link.link_upper
+
 	.row.main__separator
 
 		.col-3
@@ -98,11 +101,23 @@ include ../mixins/cat
 
 	.row.main__separator
 
+		.col-3.mb-15
+			input.input(type='text' placeholder='.input')
+		.col-3.mb-15
+			input.input.input_tel(type='tel' placeholder='.input.input_tel')
+		.col-3.mb-15
+			input.input.input_number(type='text' placeholder='.input.input_number')
+		.col-3.mb-15
+			textarea.input(placeholder='textarea.input')
+
+	.row.main__separator
+
 		.col-1.mb-15
 			.arrow
 
 		.col-1.mb-15
 			.arrow.arrow_left
+
 	.row.main__separator
 
 		.col-2.mb-15
@@ -206,4 +221,9 @@ include ../mixins/cat
 	.row.main__separator
 
 		.col-3.mb-15.main__bg-black
-			+cat(cat[0])
+
+			each val in menu
+
+				if (val.forCat)
+
+					+cat(val.sub[0])

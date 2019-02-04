@@ -6,9 +6,14 @@ include ../mixins/cat
 	.container.main__no-pad_sm
 		.row.main__cat-row
 
-			each val in cat
-				.col-sm-6.col-lg-3.main__cat-col
-					+cat(val)
+			each val in menu
+
+				if (val.sub)
+
+					each sub in val.sub
+
+						.col-sm-6.col-lg-3.main__cat-col
+							+cat(sub)
 
 .section
 	.container

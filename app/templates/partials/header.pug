@@ -10,7 +10,7 @@ header.header
 			.header__col.header__col_left
 
 				.header__toggle-wrap
-					+toggle
+					+toggle(class='js-aside__toggle header__toggle')
 
 				.header__logo-wrap
 					+logo
@@ -31,4 +31,4 @@ header.header
 						.title.title_size_sm
 							a.link.link_line_none.link_color_text(href='tel:+78120000000') +7 (812) 000-00-00
 					.header__btn
-						a.btn(href='#') Заказать консультацию
+						a.btn(href='#' data-modal='modal') Заказать консультацию

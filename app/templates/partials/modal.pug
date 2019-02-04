@@ -1,0 +1,32 @@
+include ../mixins/icon
+
+// MODAL
+#modal.modal
+	.modal__wrap
+
+		.modal__head
+			h2.title.title_color_main.modal__title Закажите бесплатную консультацию прямо сейчас!
+
+			.modal__close(data-modal-close)
+				+icon({
+					icon: 'cross',
+					link: '#'
+				})(class='icon_color_main')
+
+		.modal__body
+			form.modal__form
+
+				.mb-15.mb-md-30
+					input.input(type='text' placeholder='Имя')
+				.mb-15.mb-md-30
+					input.input.input_tel(type='tel' placeholder='Номер телефона')
+				.mb-15.mb-md-30
+					input.input(type='text' placeholder='Удобное время для звонка')
+
+				.mb-3rem.text-center
+					input.btn(type='submit' value='Заказать')
+
+			.modal__desc.text-center Указывая свои данные вы даете полное согласие на обработку персональных данных в соответствии с
+				|
+				|
+				a(href='#') политикой конфиденциальности

@@ -1,0 +1,86 @@
+{
+	"menu": [
+		{
+			"link": "#",
+			"name": "О компании"
+		},
+		{
+			"link": "#",
+			"name": "Продукция",
+			"sub": [
+				{
+					"link": "#",
+					"name": "Домокомплекты",
+					"icon": "cat-home",
+					"img": "img/content/cat/home.png",
+					"list": [
+						{
+							"name": "Проекты",
+							"link": "#"
+						},
+						{
+							"name": "Калькулятор",
+							"link": "#"
+						},
+						{
+							"name": "Объекты",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"link": "#",
+					"name": "Отопление",
+					"icon": "cat-heating",
+					"img": "img/content/cat/heating.png",
+					"list": [
+						{
+							"name": "Электрические котлы",
+							"link": "#"
+						},
+						{
+							"name": "Радиаторы",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"link": "#",
+					"name": "Водоснабжение",
+					"icon": "cat-water-supply",
+					"img": "img/content/cat/water-supply.png",
+					"list": [
+						{
+							"name": "Насосы",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"link": "#",
+					"name": "Канализация",
+					"icon": "cat-sewage",
+					"img": "img/content/cat/sewage.png",
+					"list": [
+						{
+							"name": "Септики",
+							"link": "#"
+						},
+						{
+							"name": "Трубы",
+							"link": "#"
+						}
+					]
+				}
+			]
+		},
+		{
+			"link": "#",
+			"name": "Доставка"
+		},
+		{
+			"link": "#",
+			"name": "Контакты"
+		}
+	]
+}

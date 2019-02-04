@@ -9,6 +9,7 @@ $name: arrow;
 	width: 5rem;
 	height: 5rem;
 	border-radius: 50%;
+	position: relative;
 
 	&::after {
 		content: '';

@@ -1,0 +1,28 @@
+include ../components/toggle
+
+// ASIDE
+aside.aside
+
+	+toggle(class='aside__close')
+
+	ul.aside__list
+
+		each val in menu
+
+			li.title.aside__item(class= val.sub ? 'aside__item_with-sub' : '')
+				a.link.link_line_none.link_upper.aside__link(
+					href= val.link
+					class= val.link === page.link ? 'aside__link_active' : ''
+				)= val.name
+
+				if (val.sub)
+
+					ul.aside__sub-list
+
+						each sub in val.sub
+
+							li.title.title_size_xxs.aside__sub-item
+								a.link.aside__sub-link(
+									href= sub.link
+									class= sub.link === page.link ? 'aside__sub-link_active' : ''
+								)= sub.name
