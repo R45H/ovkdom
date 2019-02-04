@@ -24,6 +24,7 @@ $name: aside;
 
 		@include screen-sm() {
 			top: calc(#{$height-header} / 2 - 20px);
+			left: 20px;
 		}
 	}
 
@@ -56,6 +57,11 @@ $name: aside;
 		display: block;
 		padding: .4em 15px;
 
+		@include screen-sm() {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
 		&_active {
 
 		}
@@ -65,6 +71,11 @@ $name: aside;
 		display: none;
 		background: white;
 		padding: .5em 15px;
+
+		@include screen-sm() {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
 	}
 
 	&__sub-item {

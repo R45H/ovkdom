@@ -11,8 +11,8 @@ $name: input;
 	width: 100%;
 	font-size: 15px;
 	line-height: 1.2;
-	border: none;
-	padding: 12px 18px;
+	border: 1px solid $color-gray;
+	padding: 11px 17px;
 	color: $color-text;
 	border-radius: 5px;
 
@@ -26,7 +26,7 @@ $name: input;
 
 	&:hover,
 	&:focus {
-		border-color: $color-second;
+		border-color: $color-gray-dark;
 	}
 
 	&:focus {
@@ -37,7 +37,7 @@ $name: input;
 	}
 
 	&:active {
-		border-color: $color-second;
+		border-color: $color-gray-dark-active;
 	}
 }
 
